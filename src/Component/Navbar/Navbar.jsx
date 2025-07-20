@@ -13,8 +13,6 @@ const Navbar = ({ setShowLogin }) => {
 	const location = useLocation();
 
 	const { getTotalCartAmount, cardItems } = useContext(StoreContext);
-	console.log("getTotalCartAmount, cardItems", getTotalCartAmount() > 0, "item added in card-----------", Object.keys(cardItems).length, cardItems === 0);
-
 	const isActive = (path) => {
 		return location.pathname === path || location.pathname.startsWith(path + "/");
 	};

@@ -35,17 +35,13 @@ const StoreContextProvider = (props) => {
 		for (const item in cardItems) {
 			if (cardItems[item] > 0) {
 				let itemInfo = jewel_list.find((product) => product._id === item);
-				// console.log("itemInfo----------------", itemInfo, cardItems, item);
 
 				if (itemInfo) totalAmount += itemInfo.price * cardItems[item];
-				// console.log("carditems------", cardItems[item]);
 
 			}
 		}
 		return totalAmount;
 	};
-
-	// console.log("carditems, ----------------", cardItems);
 
 
 	const contextValue = {

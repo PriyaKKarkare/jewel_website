@@ -5,7 +5,6 @@ import { StoreContext } from '../../Context/StoreContext';
 
 const Card = () => {
   const { removeFromCart, addToCart, jewel_list, cardItems, getTotalCartAmount } = useContext(StoreContext);
-  // console.log("usecontext details======---------------", removeFromCart, cardItems, getTotalCartAmount);
 
   const navigate = useNavigate();
 

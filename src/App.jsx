@@ -17,13 +17,9 @@ import ProductDetails from './Component/ProductDetails/ProductDetails'
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const location = useLocation();
-  // console.log(location.pathname === '/', location, "location");
 
   return (
     <>
-      {/* <div className="discount-bar">
-        Want $10 off on your first purchase? <strong>Use code PURCHASE</strong> at checkout.
-      </div> */}
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className='app'>
         <ScrollToTop />
@@ -39,7 +35,6 @@ const App = () => {
           <Route path='/order' element={<PlaceOrder />} />
         </Routes>
       </div>
-      {/* {location.pathname === '/' ? "" : <Footer />} */}
       <Footer/>
     </>
   )

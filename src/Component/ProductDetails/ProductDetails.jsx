@@ -14,7 +14,6 @@ const ProductDetails = () => {
 	const [activeTab, setActiveTab] = useState('info');
 	const [quantity, setQuantity] = useState(1);
 	const { addToCart } = useContext(StoreContext);
-	console.log("addtocart---------------", addToCart, "fffffffffff-------------", productId, quantity);
 
 	if (!product) return <div>Product not found</div>;
 
