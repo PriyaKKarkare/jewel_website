@@ -10,3 +10,6 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+💎 Jewel Website
+This project is a fully responsive Jewel Website built using ReactJS, HTML, CSS, and JavaScript. The website showcases elegant UI designs for displaying jewelry products with interactive sections like product details, pricing, and contact pages.
