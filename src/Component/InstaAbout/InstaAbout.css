@@ -1,0 +1,53 @@
+.instagram-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+}
+
+.instagram-title {
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center;
+  transform: none !important;
+  animation: none !important;
+}
+
+.insta-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.insta-wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.insta-wrapper:hover .insta-image {
+  filter: brightness(50%);
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.insta-wrapper.active:hover .overlay {
+  opacity: 1;
+}

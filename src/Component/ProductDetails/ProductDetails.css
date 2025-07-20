@@ -1,0 +1,154 @@
+.product-details {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.product-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-gallery {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumbnail-row img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-info-block {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.original-price {
+  margin-left: 1rem;
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+.product-description {
+  margin-bottom: 1rem;
+  background-color: #e3f0ff;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.product-features {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.product-features div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.quantity-section label {
+  font-weight: bold;
+}
+
+.quantity-section input {
+  width: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.add-to-cart {
+  background-color: #000;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-buttons .active {
+  background-color: black;
+  color: white;
+}
+
+.tab-content ul {
+  padding-left: 1.5rem;
+}
+
+.tab-content li {
+  margin-bottom: 0.5rem;
+}
+
+.review-section {
+  margin-top: 2rem;
+}
+
+.review-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.review {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #000;
+}

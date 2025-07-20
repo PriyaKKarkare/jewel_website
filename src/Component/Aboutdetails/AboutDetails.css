@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.about-details-section {
+  background-color: #fff;
+}
+
+.about-details-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+
+.about-details-left {
+  flex: 1;
+}
+
+.about-heading {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+.about-details-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-details-container {
+    flex-direction: column;
+  }
+
+  .about-heading {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .about-details-left,
+  .about-details-right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,105 @@
+.explore-category {
+
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.explore-category h1 {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+.shop-by-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.jewel-explore {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.jewel-explore:hover {
+    color: #171313;
+    text-decoration: underline;
+}
+
+.explore-category-text {
+    max-width: 60%;
+    color: #808080;
+}
+
+.explore-category-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0px;
+    overflow-x: scroll;
+}
+
+.explore-category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-category-list-item {
+    min-width: 100px;
+    padding: 0px;
+     transition: 0.5s;
+    animation: backgroundZoom 10s ease-in-out infinite alternate;
+}
+
+
+.explore-category-list-item img {
+    width: 13vw;
+    height: 25vh;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@keyframes backgroundZoom {
+    0% {
+        transform: scale(1);
+        background-position: center;
+    }
+
+    100% {
+        transform: scale(1.02);
+        background-position: center;
+    }
+}
+
+.explore-category-list-item p {
+    margin-top: 10px;
+    font-size: max(1.4vw, 16px);
+    color: black;
+    cursor: pointer;
+}
+
+.explore-category-list-item .active {
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.explore-category hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+@media (max-width: 1050px) {
+    .explore-category-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}

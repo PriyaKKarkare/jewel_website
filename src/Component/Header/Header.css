@@ -1,0 +1,76 @@
+.header {
+	height: 44vw;
+	margin: 30px auto;
+	position: relative;
+	background: url(../../assets/neck_img.png) no-repeat;
+	background-size: cover;
+	animation: backgroundZoom 12s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundZoom {
+	0% {
+		transform: scale(1);
+		background-position: center;
+	}
+
+	100% {
+		transform: scale(1.12);
+		background-position: center;
+	}
+}
+
+.header-content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1.5vw;
+	max-width: 50%;
+	bottom: 10%;
+	left: 6vw;
+	animation: fadeIn 3s;
+}
+
+.header-content h2 {
+	font-weight: 500;
+	color: black;
+	font-size: max(4.5vw, 22px);
+}
+
+.header-content p {
+	color: black;
+	font-size: 1vw;
+
+}
+
+.header-content button {
+	border: none;
+	padding: 1vw 2.3vw;
+	font-size: max(2vw, 10px);
+	background-color: transparent;
+	color: black;
+
+}
+
+@media(max-width:1050px) {
+	.header-content {
+		max-width: 45%;
+	}
+
+}
+
+@media(max-width:750px) {
+	.header-content {
+		max-width: 45%;
+	}
+
+	.header-content p {
+		display: none;
+	}
+
+	.header-content button {
+		padding: 2vw 4vw;
+
+	}
+
+}

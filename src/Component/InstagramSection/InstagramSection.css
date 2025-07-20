@@ -1,0 +1,108 @@
+.instagram-section {
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  overflow: visible;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.image-grid.first-row,
+.image-grid.second-row {
+  flex-wrap: nowrap;
+}
+
+.instagram-title {
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  color: #000;
+  line-height: 1.5;
+  margin: 40px 0;
+  position: relative;
+  z-index: 10;
+  background: white;
+  display: inline-block;
+  padding: 0 20px;
+  animation: floatHeading 3s ease-in-out infinite;
+}
+
+.insta-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  animation: bounceUpDown 2s ease-in-out infinite;
+}
+
+.insta-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatHeading {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounceUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+}
+
+
+.img-1 {
+  animation-delay: 0s;
+}
+
+.img-2 {
+  animation-delay: 0.2s;
+}
+
+.img-3 {
+  animation-delay: 0.4s;
+}
+
+.img-4 {
+  animation-delay: 0.1s;
+}
+
+.img-5 {
+  animation-delay: 0.3s;
+}
+
+.img-6 {
+  animation-delay: 0.5s;
+}

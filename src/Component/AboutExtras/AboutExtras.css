@@ -1,0 +1,43 @@
+.about-extras-section {
+  margin: 10% auto;
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+   width: 100%;
+}
+
+.about-extras-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.extras-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 calc(33.33% - 30px);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.extras-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.extras-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.extras-text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 15px;
+  color: black;
+}
